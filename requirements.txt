@@ -12,3 +12,4 @@ rasterio
 seaborn
 folium
 mapclassify
+geoalchemy2
