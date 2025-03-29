@@ -1,0 +1,22 @@
+# Virtual environments
+mynenv/
+myenv/
+venv/
+.env/
+
+# OSM PBF files (large and downloadable)
+*.osm.pbf
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Mac system files
+.DS_Store
+
+# Logs and outputs
+*.log
+
