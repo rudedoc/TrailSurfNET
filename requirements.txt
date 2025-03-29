@@ -1,0 +1,14 @@
+pandas
+SQLAlchemy
+psycopg2-binary
+geopandas
+shapely
+matplotlib
+sentinelhub
+numpy
+Pillow
+ipython
+rasterio
+seaborn
+folium
+mapclassify

@@ -15,7 +15,7 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 ## 📂 Project Structure
 
 - `Data Collection.ipynb` – SQL queries and exploratory analysis of OSM data
-- `planet_osm_line Exploratory Analysis.ipynb` – Trail length calculations, surface groupings
+- `Exploratory Analysis.ipynb` – Trail length calculations, surface groupings
 - `myenv/` – Virtual environment (not tracked in Git)
 - `.gitignore` – Excludes virtual environment, large PBF files, cache
 - `README.md` – Project overview and objectives
@@ -85,6 +85,9 @@ wget https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf
 osm2pgsql --create --slim --extra-attributes --hstore --hstore-add-index -d osm --cache 8000 united-kingdom-latest.osm.pbf ireland-and-northern-ireland-latest.osm.pbf
 
 ## Run Notebook
+python3 -m venv myenv
 source myenv/bin/activate
+pip install notebook
 jupyter notebook
+
 
