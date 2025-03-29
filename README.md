@@ -85,9 +85,9 @@ wget https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf
 osm2pgsql --create --slim --extra-attributes --hstore --hstore-add-index -d osm --cache 8000 united-kingdom-latest.osm.pbf ireland-and-northern-ireland-latest.osm.pbf
 
 ## Run Notebook
-python3 -m venv myenv
-source myenv/bin/activate
-pip install notebook
-jupyter notebook
+- `python3 -m venv myenv`
+- `source myenv/bin/activate`
+- `pip install -r requirements.txt`
+- `jupyter notebook`
 
 
