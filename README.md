@@ -90,4 +90,6 @@ osm2pgsql --create --slim --extra-attributes --hstore --hstore-add-index -d osm 
 - `pip install -r requirements.txt`
 - `jupyter notebook`
 
+Backing up the Database
+`pg_dump -U markfinlay -h localhost -p 5432 osm > osm_backup.sql`
 
