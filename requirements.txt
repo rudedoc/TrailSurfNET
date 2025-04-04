@@ -13,3 +13,11 @@ seaborn
 folium
 mapclassify
 geoalchemy2
+jupyter
+pandas 
+sqlalchemy 
+psycopg2-binary 
+seaborn 
+geopandas 
+folium 
+mapclassify 
