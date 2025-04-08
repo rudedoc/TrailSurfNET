@@ -35,7 +35,7 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - ✅ Classified `surface` values into 8 standard `surface_group`s
 - ✅ Balance `surface_group` Classes
 - ✅ Compile trail_segments and bounding boxes for satellite imagery
-- ✅ Gather Sentinel 2 Data and store PNGs in DB
+- ✅ Gather Sentinel 2 Data and store PNGs in DB - 30K images
 - ⏳ Model training with CNNs for image-based classification
 
 ## 🌍 Future Work
