@@ -33,8 +33,9 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 
 - ✅ Imported and cleaned OSM trail data for UK & Ireland
 - ✅ Classified `surface` values into 8 standard `surface_group`s
-- ✅ Calculated total trail distance by surface type
-- ⏳ Preparing bounding boxes for satellite imagery
+- ✅ Balance `surface_group` Classes
+- ✅ Compile trail_segments and bounding boxes for satellite imagery
+- ✅ Gather Sentinel 2 Data and store PNGs in DB
 - ⏳ Model training with CNNs for image-based classification
 
 ## 🌍 Future Work
