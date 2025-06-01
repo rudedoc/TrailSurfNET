@@ -20,4 +20,6 @@ psycopg2-binary
 seaborn 
 geopandas 
 folium 
-mapclassify 
+mapclassify
+torch 
+torchvision

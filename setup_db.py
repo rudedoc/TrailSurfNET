@@ -15,6 +15,8 @@ DB_PORT = "5432"
 FILE_IRELAND = "ireland-and-northern-ireland-latest.osm.pbf"
 FILE_UK = "united-kingdom-latest.osm.pbf"
 
+# Check for duplicate data between sources in line 15, 16
+
 # --- Step 1: Reset the Database ---
 
 # Connect to the default 'postgres' database to manage the target DB.
