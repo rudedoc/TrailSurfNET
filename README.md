@@ -14,8 +14,10 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 
 ## 📂 Project Structure
 
-- `Data Collection.ipynb` – SQL queries and exploratory analysis of OSM data
-- `Exploratory Analysis.ipynb` – Trail length calculations, surface groupings
+- `setup_db.py` - builds DB and loads OSM data into DB
+- `OSM Data.ipynb` – Prepares the OSM Data
+- `Sentinel 2 Data.ipynb` – Collects the Satelite Data for each row in trail_segments
+- `Training.ipynb` - Trains the model
 - `myenv/` – Virtual environment (not tracked in Git)
 - `.gitignore` – Excludes virtual environment, large PBF files, cache
 - `README.md` – Project overview and objectives
