@@ -12,6 +12,15 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - Prepare geometry data for satellite image extraction (e.g., Sentinel-2)
 - Train convolutional neural networks (CNNs) to classify trail surfaces using remote sensing data
 
+## 🛠️ Tech Stack
+
+- PostgreSQL + PostGIS for spatial database and queries
+- osm2pgsql for importing OSM data
+- Jupyter Notebooks for data exploration and preprocessing
+- Python (Pandas, NumPy, etc.) for analysis
+- Satellite imagery: Sentinel-2, Landsat (planned)
+- Deep learning: PyTorch / TensorFlow (planned)
+
 ## 📂 Project Structure
 
 - `setup_db.py` - builds DB and loads OSM data into DB
@@ -22,14 +31,12 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - `.gitignore` – Excludes virtual environment, large PBF files, cache
 - `README.md` – Project overview and objectives
 
-## 🛠️ Tech Stack
-
-- PostgreSQL + PostGIS for spatial database and queries
-- osm2pgsql for importing OSM data
-- Jupyter Notebooks for data exploration and preprocessing
-- Python (Pandas, NumPy, etc.) for analysis
-- Satellite imagery: Sentinel-2, Landsat (planned)
-- Deep learning: PyTorch / TensorFlow (planned)
+## 🛠️ Setup
+- `python3 -m venv myenv`
+- `source myenv/bin/activate`
+- `pip install -r requirements.txt`
+- `python setup_db.py` - run the setup script
+- `jupyter notebook`
 
 ## 📈 Progress
 
@@ -42,7 +49,6 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 
 ## 🌍 Future Work
 
-- Integrate Sentinel-2 imagery with trail geometries
 - Train and evaluate CNN models (e.g., ResNet, VGG-16)
 - Improve classification of `Unknown` surfaces
 - Visualize trail quality in QGIS or web map
@@ -65,34 +71,4 @@ This is part of an MSc thesis at the National College of Ireland. Contributions,
 
 
 
-
-
-
-
-
-# Implementation Notes
-
-## Install Postgresql DB
-brew install postgresql postgis
-brew services start postgresql
-
-CREATE DATABASE osm;
-\c osm
-CREATE EXTENSION postgis;
-CREATE EXTENSION hstore;
-
-## Download OSM Data
-wget https://download.geofabrik.de/europe/ireland-and-northern-ireland-latest.osm.pbf
-wget https://download.geofabrik.de/europe/united-kingdom-latest.osm.pbf
-
-osm2pgsql --create --slim --extra-attributes --hstore --hstore-add-index -d osm --cache 8000 united-kingdom-latest.osm.pbf ireland-and-northern-ireland-latest.osm.pbf
-
-## Run Notebook
-- `python3 -m venv myenv`
-- `source myenv/bin/activate`
-- `pip install -r requirements.txt`
-- `jupyter notebook`
-
-Backing up the Database
-`pg_dump -U markfinlay -h localhost -p 5432 osm > osm_backup.sql`
 
