@@ -14,7 +14,10 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 
 ## 🛠️ Tech Stack
 
-- PostgreSQL + PostGIS for spatial database and queries
+- PostgreSQL + PostGIS for spatial database and queries `brew install postgresql`
+- PostgreSQL exxensions required:
+- - postgis `brew install postgis`
+  - hstore
 - osm2pgsql for importing OSM data
 - Jupyter Notebooks for data exploration and preprocessing
 - Python (Pandas, NumPy, etc.) for analysis
@@ -22,7 +25,6 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - Deep learning: PyTorch / TensorFlow (planned)
 
 ## 📂 Project Structure
-
 - `setup_db.py` - builds DB and loads OSM data into DB
 - `OSM Data.ipynb` – Prepares the OSM Data
 - `Sentinel 2 Data.ipynb` – Collects the Satelite Data for each row in trail_segments
@@ -32,16 +34,22 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - `README.md` – Project overview and objectives
 
 ## 🛠️ Setup
+- make sure your DB is running! `brew services start postgresql@17`
 - `python3 -m venv myenv`
 - `source myenv/bin/activate`
 - `pip install -r requirements.txt`
 - `python setup_db.py` - run the setup script
 - `jupyter notebook`
 
+## Note on Github and Jupyter Notebooks
+- in the notebook go to kernal >> Restart Kernel and Clear Outputs of All Cells
+- Then do file >> save
+This reduces the notebook back to is pure code and removes any cached images and data so that the notebook can be checked into github
+
 ## 📈 Progress
 
 - ✅ Imported and cleaned OSM trail data for UK & Ireland
-- ✅ Classified `surface` values into 8 standard `surface_group`s
+- ✅ Classified `surface` values into 5 standard `surface_group`s
 - ✅ Balance `surface_group` Classes
 - ✅ Compile trail_segments and bounding boxes for satellite imagery
 - ✅ Gather Sentinel 2 Data and store PNGs in DB - 30K images
