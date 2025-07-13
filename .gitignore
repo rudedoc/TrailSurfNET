@@ -3,6 +3,7 @@ mynenv/
 myenv/
 venv/
 .env/
+.env
 
 # OSM PBF files (large and downloadable)
 *.osm.pbf
@@ -19,4 +20,4 @@ __pycache__/
 
 # Logs and outputs
 *.log
-
+sentinel_data_segments/
