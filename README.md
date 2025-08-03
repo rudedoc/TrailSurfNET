@@ -54,15 +54,18 @@ This reduces the notebook back to is pure code and removes any cached images and
 - ✅ Compile trail_segments and bounding boxes for satellite imagery
 - ✅ Gather Sentinel 2 Data and store PNGs in DB - 30K images
 - ✅ Model training with CNNs for image-based classification
+- ✅ Model evaluations, visualizations, code reviews
 - ✅ First Complete Draft the Thesis
 - ⏳ Preparation of Powerpoint
 - ⏳ Preparation of Video
 
 ## 🌍 Future Work
-
-- Train and evaluate CNN models (e.g., ResNet, VGG-16)
-- Improve classification of `Unknown` surfaces
-- Visualize trail quality in QGIS or web map
+- Higher Resolution Satellite Imagery
+- Incorporating Digital Elevation Models (DEMs)
+- High-resolution Accelerometer Data from Smartphones
+- Advanced Model Architectures - Vision Transformers
+- Enhanced OSM Label Validation and Standardization
+- Expansion to Broader Geographic Areas
 
 ---
 
