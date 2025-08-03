@@ -1,27 +1,32 @@
+# Core Data Handling & Database
 pandas
-SQLAlchemy
+sqlalchemy
 psycopg2-binary
+geoalchemy2
+numpy
+
+# Geospatial
 geopandas
 shapely
-matplotlib
-sentinelhub
-numpy
-Pillow
-ipython
 rasterio
-seaborn
 folium
 mapclassify
-geoalchemy2
-jupyter
-pandas 
-sqlalchemy 
-psycopg2-binary 
-seaborn 
-geopandas 
-folium 
-mapclassify
-torch 
+
+# Deep Learning
+torch
 torchvision
+scikit-learn
+
+# APIs and Utilities
+requests
+python-dotenv
+sentinelhub
 huggingface_hub
 safetensors
+
+# Jupyter & Plotting
+jupyter
+matplotlib
+seaborn
+ipython
+Pillow
