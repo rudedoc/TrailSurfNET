@@ -53,7 +53,10 @@ This reduces the notebook back to is pure code and removes any cached images and
 - ✅ Balance `surface_group` Classes
 - ✅ Compile trail_segments and bounding boxes for satellite imagery
 - ✅ Gather Sentinel 2 Data and store PNGs in DB - 30K images
-- ⏳ Model training with CNNs for image-based classification
+- ✅ Model training with CNNs for image-based classification
+- ✅ First Complete Draft the Thesis
+- ⏳ Preparation of Powerpoint
+- ⏳ Preparation of Video
 
 ## 🌍 Future Work
 
