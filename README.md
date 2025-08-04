@@ -1,6 +1,14 @@
-# TrailSurfNET 🏕️🌍
+## README/Configuration Manual for TrailSurfNET 🏕️🌍
 
-**Automated Trail Surface Classification Using OpenStreetMap and Satellite Imagery**
+**Project Title:** TrailSurfNET: Trail Surface Classification Using Convolutional Neural Networks and OpenStreetMap Annotations
+**Author:** Mark Finlay
+**Date:** August 2, 2025
+
+This document provides detailed instructions for replicating the experimental setup of the TrailSurfNET project. The primary objective of this research is to classify hiking trail surfaces using Sentinel-2 satellite imagery and OpenStreetMap (OSM) data. This manual outlines the necessary hardware, software, dependencies, and procedural steps to reproduce the data pipeline and model training experiments described in the thesis.
+
+
+### 1. Introduction
+
 
 TrailSurfNET is a research project exploring the classification of hiking trail surfaces using a combination of OpenStreetMap (OSM) data and satellite imagery. The goal is to improve trail metadata quality and support applications in hiking, land management, and geospatial analysis.
 
@@ -10,7 +18,8 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - Standardize trail surface types into high-level categories (e.g., Gravel, Dirt, Asphalt)
 - Calculate total trail distances by surface type
 - Prepare geometry data for satellite image extraction (e.g., Sentinel-2)
-- Train convolutional neural networks (CNNs) to classify trail surfaces using remote sensing data
+- Train various convolutional neural networks (CNNs) to classify trail surfaces using remote sensing data (``)
+- Evaluate and Visualise performance of various models.
 
 ## 🛠️ Tech Stack
 
@@ -25,13 +34,13 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - Deep learning: PyTorch / TensorFlow (planned)
 
 ## 📂 Project Structure
+- `README.md` – Project overview and objectives
+- `.gitignore` – Excludes virtual environment, large PBF files, cache
+- `myenv/` – Virtual environment (not tracked in Git)
 - `setup_db.py` - builds DB and loads OSM data into DB
 - `OSM Data.ipynb` – Prepares the OSM Data
 - `Sentinel 2 Data.ipynb` – Collects the Satelite Data for each row in trail_segments
-- `Training.ipynb` - Trains the model
-- `myenv/` – Virtual environment (not tracked in Git)
-- `.gitignore` – Excludes virtual environment, large PBF files, cache
-- `README.md` – Project overview and objectives
+- Training runs: `VggCNN.ipynb, ResNET18 Scratch.ipynb, ResNET18 BigEarthNet.ipynb, ResNET34 Scratch.ipynb, ResNET50 Scratch.ipynb, ResNET50 BigEarthNet.ipynb`
 
 ## 🛠️ Setup
 - make sure your DB is running! `brew services start postgresql@17`
