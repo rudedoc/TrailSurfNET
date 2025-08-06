@@ -48,6 +48,7 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - `source myenv/bin/activate`
 - `pip install -r requirements.txt`
 - `python setup_db.py` 
+- `jupyter notebook`
 
 ## Note on Github and Jupyter Notebooks
 - in the notebook go to kernal >> Restart Kernel and Clear Outputs of All Cells
