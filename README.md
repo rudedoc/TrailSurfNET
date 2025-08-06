@@ -43,12 +43,11 @@ TrailSurfNET is a research project exploring the classification of hiking trail 
 - Training runs: `VggCNN.ipynb, ResNET18 Scratch.ipynb, ResNET18 BigEarthNet.ipynb, ResNET34 Scratch.ipynb, ResNET50 Scratch.ipynb, ResNET50 BigEarthNet.ipynb`
 
 ## 🛠️ Setup
-- make sure your DB is running! `brew services start postgresql@17`
+- make sure your DB is running! `brew services start postgresql`
 - `python3 -m venv myenv`
 - `source myenv/bin/activate`
 - `pip install -r requirements.txt`
-- `python setup_db.py` - run the setup script
-- `jupyter notebook`
+- `python setup_db.py` 
 
 ## Note on Github and Jupyter Notebooks
 - in the notebook go to kernal >> Restart Kernel and Clear Outputs of All Cells
