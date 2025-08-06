@@ -4,6 +4,7 @@ sqlalchemy
 psycopg2-binary
 geoalchemy2
 numpy
+rtree
 
 # Geospatial
 geopandas
