@@ -24,3 +24,4 @@ sentinel_data_segments/
 
 *.pth
 trailsurfNET_osm_sentinel2_db_v1.sql.gz
+trailsurfNET_osm_sentinel2_db_v2.sql.gz
