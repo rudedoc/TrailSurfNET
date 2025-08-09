@@ -21,3 +21,5 @@ __pycache__/
 # Logs and outputs
 *.log
 sentinel_data_segments/
+
+*.pth
