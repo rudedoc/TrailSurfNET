@@ -1,8 +1,6 @@
 ## README/Configuration Manual for TrailSurfNET 🏕️🌍
 
 **Project Title:** TrailSurfNET: Trail Surface Classification Using Convolutional Neural Networks and OpenStreetMap Annotations
-**Author:** Mark Finlay
-**Date:** August 2, 2025
 
 This document provides detailed instructions for replicating the experimental setup of the TrailSurfNET project. The primary objective of this research is to classify hiking trail surfaces using Sentinel-2 satellite imagery and OpenStreetMap (OSM) data. This manual outlines the necessary hardware, software, dependencies, and procedural steps to reproduce the data pipeline and model training experiments described in the thesis.
 
